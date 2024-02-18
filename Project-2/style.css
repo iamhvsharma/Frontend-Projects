@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#nav{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#nav-left{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#nav-right{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+#nav h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#nav h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#nav h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#content{
+    /* margin-top: 10px; */
+    padding: 40px 60px;
+}
+
+#content h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#content h1{
+    margin-top: 30px ;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 120px;
+    letter-spacing: -6px;
+    word-spacing: 6px;
+
+}
+
+
+#case{ 
+    padding: 40px 65px;
+    /* margin-top: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#case h4{
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+
+#case h5{
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+
+#right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+#line{
+    height: 2px;
+    width: 160px;
+    background-color: black;
+}
+
+#projects{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    gap: 60px;
+}
+
+.elem{
+    width: 50%;
+    /* background-color: blue; */
+}
+
+.elem-img{
+    height: 500px;
+    width: 100%;
+ 
+    /* background-color: green; */
+    background-size: cover;
+    background-position: center;
+    
+    
+} 
+
+#img1{
+    background-image: url(Assets/img1.jpg);
+}
+
+#img2{
+    background-image: url(Assets/img2.jpg);
+}
+
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    font-weight: 500;
+}
+
+.bottom i {
+    padding: 14px 30px;
+    font-size: 30px;
+    border-radius: 2px solid black;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.bottom i:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.bottom h4{
+    font-size: 20px;
+    color: #aba8a8;
+}
