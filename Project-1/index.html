@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="nav-part1">
+                <h3>Menu</h3>
+                <i class="ri-menu-5-line"></i>
+            </div>
+            <div id="nav-part2">
+                <h1>Harsh Gallary</h1>
+            </div>
+            <div id="nav-part3">
+                <button>Log In</button>
+                <button id="btn2">Sign Up</button>
+            </div>
+        </div>
+
+        <div id="page">
+            <h1>Pictures Collection</h1>
+            <img src="Assets/img2.jpg" alt="" id="img2">
+            <img src="Assets/img3.jpg" alt="" id="img3">
+            <img src="Assets/img4.jpg" alt="" id="img4">
+            <img src="Assets/img1.jpg" alt="" id="img1">
+            <h5 id="btm-left">Thanks for Visiting</h5>
+
+            <i class="ri-instagram-line"> @thedevharsh</i>
+        </div>
+
+    </div>
+
+
+    <script>
+        const images = document.querySelectorAll('img');
+        let zIndex = 1;
+
+        function bringToFront() {
+            images.forEach(image => {
+                image.style.zIndex = "0";
+            });
+
+            images[zIndex].style.zIndex = "1";
+            zIndex = (zIndex + 1) % images.length;
+        }
+
+        setInterval(bringToFront, 3000);
+
+    </script>
+
+</body>
+</html>
